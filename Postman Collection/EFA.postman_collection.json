@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "feb54d8b-3d65-4f14-a9a8-b2ecf3c8edcb",
+		"name": "EFA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Conversion Options",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://m3s085lmsd.execute-api.us-west-2.amazonaws.com/development/v1/units",
+					"protocol": "https",
+					"host": [
+						"m3s085lmsd",
+						"execute-api",
+						"us-west-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"development",
+						"v1",
+						"units"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conversion Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"initialValue\": \"18\",\r\n\"initialUOM\": \"lb\",\r\n\"desiredUOM\":\"kg\"\r\n}"
+				},
+				"url": {
+					"raw": "https://m3s085lmsd.execute-api.us-west-2.amazonaws.com/development/v1/convert",
+					"protocol": "https",
+					"host": [
+						"m3s085lmsd",
+						"execute-api",
+						"us-west-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"development",
+						"v1",
+						"convert"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
